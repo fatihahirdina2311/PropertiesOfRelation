@@ -1,0 +1,249 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    min-height: 100vh;
+    padding: 40px;
+    color: #1e293b;
+}
+
+
+/* Main title */
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+body > h2 {
+    text-align: center;
+    color: #cbd5e1;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+/* Main container */
+
+.container {
+
+    width: 850px;
+    margin: auto;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+
+}
+
+
+
+/* Input section */
+
+.input-section {
+
+    background: #f8fafc;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    height: fit-content;
+
+}
+
+
+label {
+
+    font-weight: 600;
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #334155;
+
+}
+
+
+input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    border: 2px solid #cbd5e1;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+
+input:focus {
+
+    border-color: #2563eb;
+
+}
+
+
+
+/* Button */
+
+button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+button:hover {
+
+    background:#1d4ed8;
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* Output */
+
+.output-section {
+
+    background:#f8fafc;
+
+    padding:25px;
+
+    border-radius:15px;
+
+}
+
+
+
+.output-section h2 {
+
+    color:#1e40af;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* Result list */
+
+ul {
+
+    list-style:none;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-bottom:15px;
+
+    border-left:5px solid #2563eb;
+
+    box-shadow:0 5px 10px rgba(0,0,0,0.05);
+
+}
+
+
+
+li {
+
+    padding:5px;
+
+}
+
+
+
+/* Closure section */
+
+p {
+
+    font-weight:600;
+
+    color:#475569;
+
+    margin-top:15px;
+
+}
+
+
+
+#reflexive-closure,
+#symmetric-closure,
+#transitive-closure {
+
+    font-size:14px;
+
+    color:#334155;
+
+}
+
+
+
+/* Mobile responsive */
+
+@media(max-width:900px){
+
+    .container{
+
+        width:95%;
+
+        grid-template-columns:1fr;
+
+    }
+
+}

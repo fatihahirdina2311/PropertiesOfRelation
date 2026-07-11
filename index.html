@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties of Relation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Properties of Relation</h1>
+    <h2>Welcome to our Relation Properties Checker</h2>
+    <div class="container">
+        <div class="input-section">
+            <label for="relation">Enter Relation (as pairs):</label>
+            <input type="text" id="relation" placeholder="e.g., (1,2),(2,3),(3,1)">
+            <button id="check-properties">Check Properties</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Properties:</h2>
+            <ul id="reflexive"></ul>
+            <ul id="symmetric"></ul>
+            <ul id="transitive"></ul>
+
+            <h2>Closures:</h2>
+            <p><strong>Reflexive Closure</strong></p>
+            <ul id="reflexive-closure"></ul>
+
+            <p><strong>Symmetric Closure</strong></p>
+            <ul id="symmetric-closure"></ul>
+
+            <p><strong>Transitive Closure</strong></p>
+            <ul id="transitive-closure"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>
