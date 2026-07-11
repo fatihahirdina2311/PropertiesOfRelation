@@ -8,21 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Properties of Relation</h1>
-    <h2>Welcome to our Relation Properties Checker</h2>
+    <h1>Welcome to Properties of Relation Checker</h1>
     <div class="container">
         <div class="input-section">
-            <label for="relation">Enter Relation (as pairs):</label>
+            <label for="relation">Enter Properties of Relation:</label>
             <input type="text" id="relation" placeholder="e.g., (1,2),(2,3),(3,1)">
             <button id="check-properties">Check Properties</button>
         </div>
 
-        <div class="output-section">
+        <div class="properties-section">
             <h2>Properties:</h2>
+            <p><strong>Reflexive</strong></p>
             <ul id="reflexive"></ul>
-            <ul id="symmetric"></ul>
-            <ul id="transitive"></ul>
 
+            <p><strong>Symmetric</strong></p>
+            <ul id="symmetric"></ul>
+
+            <p><strong>Transitive</strong></p>
+            <ul id="transitive"></ul>
+        </div>
+
+        <div class="closures-section">
             <h2>Closures:</h2>
             <p><strong>Reflexive Closure</strong></p>
             <ul id="reflexive-closure"></ul>
