@@ -1,10 +1,32 @@
 const button = document.getElementById("check-properties");
 
 button.addEventListener("click", function () {
-    // Get the input value correctly
-    const input = document.getElementById("relation").value;
+
+    const input = document.getElementById("relation").value.trim();
+
+    // Clear old error message
+    document.getElementById("error-message").textContent = "";
+
+    // Check empty input
+    if (input === "") {
+        document.getElementById("error-message").textContent =
+            "Please enter a relation.";
+        return;
+    }
+
+    // Check input format
+    const pattern = /^(\(\d+,\s*\d+\))(,\s*\(\d+,\s*\d+\))*$/;
+
+    if (!pattern.test(input)) {
+        document.getElementById("error-message").textContent =
+            "Invalid input. Please Enter The Correct Format : (1,2), (2,3)";
+        return;
+    }
+
+
     // Parse the relation
     const relation = parseRelation(input);
+
     // Get elements from the relation
     const elements = getElements(relation);
 
@@ -17,15 +39,13 @@ button.addEventListener("click", function () {
     displayResults(reflexive, symmetric, transitive, relation, elements);
 
     console.log(relation);
-
     console.log(elements);
 
 });
 
-document.getElementById('clear-input').addEventListener('click', function() {
-    document.querySelector('input').value = '';
-});
-
+document.getElementById('clear-input').addEventListener('click', function() { 
+    document.querySelector('input').value = ''; });
+    
 function parseRelation(input){
 
     const regex = /\((\d+),\s*(\d+)\)/g;
