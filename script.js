@@ -22,6 +22,10 @@ button.addEventListener("click", function () {
 
 });
 
+document.getElementById('clear-input').addEventListener('click', function() {
+    document.querySelector('input').value = '';
+});
+
 function parseRelation(input){
 
     const regex = /\((\d+),\s*(\d+)\)/g;

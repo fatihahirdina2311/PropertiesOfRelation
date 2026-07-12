@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Properties of Relation Checker</h1>
+    <h1>Welcome to Our Relation Properties Checker</h1>
+    <h3>Please enter your relation pairs in the format (x,y),(a,b),... and the system will 
+        <br>automatically determine whether the relation is reflexive, symmetric, and transitive.</br></h3>
     <div class="container">
         <div class="input-section">
             <label for="relation">Enter Properties of Relation:</label>
             <input type="text" id="relation" placeholder="e.g., (1,2),(2,3),(3,1)">
-            <button id="check-properties">Check Properties</button>
+           <div class="button-group">
+                <button id="check-properties"> Check Properties </button>
+                <button id="clear-input">🗑️ Clear</button>
+           </div>
         </div>
 
         <div class="properties-section">
