@@ -192,4 +192,3 @@ function formatClosure(closure) {
     }
     return closure.map(pair => `(${pair[0]},${pair[1]})`).join(", ");
 }
-
