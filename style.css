@@ -146,6 +146,20 @@ input:focus {
     transform: scale(1.01);
 }
 
+#error-message {
+    color: rgb(134, 77, 96);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+}
+
 /* Button */
 
 .button-group {
